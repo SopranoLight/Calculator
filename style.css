@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root{
+    /* colors */
+    --color-white: #fff;
+    --color-blue: #345FF6;
+    --color-gray: #5E6E85;
+    --color-dark: #253347;
+    --bg-gradient: linear-gradient(90deg, #345FF7 0%, #587DFF 100%);
+  
+    /* fonts */
+
+    --font-formRegular: normal 400 14px/21px 'Inter';
+    --font-formBold: normal 600 16px/24px 'Inter';
+    --font-formlight: normal 600 24px/29px 'Inter';
+    --font-titleMini: normal 600 48px/53px 'Inter';
+    --font-formNumber: normal 600 64px/70px 'Inter';
+    --font-last: normal 600 20px/24px 'Inter';
+}
+
+*{
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, body, p, ul, ol,input{
+    margin: 0;
+    padding: 0;
+}
+
+
+.form{
+   max-width: 564px; 
+   
+   padding: 32px;
+   box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+   border-radius: 16px;
+   background: var(--color-white);
+}
+.form__info{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.form__enter{
+    font: var(--font-formlight);
+    color: var(--color-dark);
+}
+.form__vaga{
+    display: flex;
+    gap: 24px;
+}
+.form__all{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font: var(--font-formRegular);
+    color: var(--color-gray);
+    position: relative;
+}
+
+.type__text{
+    padding: 20px 60px 20px 24px;
+    border: 1px solid #D8E2E7;
+    border-radius: 12px;
+    width: 219px;
+    height: 57px;
+    position: relative;
+    font: var(--font-formlight);
+    color: var(--color-dark);
+}
+.type__text:focus-visible{
+    outline: none;
+    font: var(--font-formlight);
+    color: var(--color-dark);
+}
+.type__text:target{
+    font: var(--font-formlight);
+    color: var(--color-dark);
+}
+.type__text::placeholder{
+    position: absolute;
+    top: 13px;
+    font: var(--font-formlight); 
+    color: var(--color-gray);
+}
+.sm{
+    position: absolute;
+    top: 42px;
+    right: 24px;
+    font: var(--font-formlight); 
+    color: var(--color-blue);
+}
+
+.form__radio{
+    display: flex;
+    gap: 24px;
+}
+.form__al{
+    display: flex;
+    gap: 18px;
+    height: 31px;
+    width: 219px;
+    font: var(--font-formBold);
+    color: var(--color-dark);
+}
+.type__radio{
+    width: 31px;
+    height: 31px;
+    border: none;
+    outline: none;
+}
+
+input[type="radio"]:not(:checked){
+    border: 20px solid #253347;
+}
+
+
+
+
+
+.result{
+    display: flex;
+    align-items: center;
+    gap: 98px;
+    max-width: 500px;
+    padding: 32px;
+    background: var(--bg-gradient);
+    border-radius: 16px 999px 999px 16px;
+}
+.result__info{
+    display: flex;
+    flex-direction: column;
+   
+}
+.result__bmi{
+    font: var(--font-formBold);
+    color: var(--color-white); 
+    width: 130px;
+}
+.result__weight{
+    font: var(--font-formNumber);
+    color: var(--color-white);
+    letter-spacing: -0.05em;
+}
+.result__text{
+    font: var(--font-formRegular);
+    color: var(--color-white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.caluculator{
+    padding-top: 167px;
+    display: flex;
+    gap: 131px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.caluculator__info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    gap: 35px;
+    width: 510px;
+}
+.titleMain{
+    font: var(--font-formNumber);
+    color: var(--color-dark);
+}
+.paragraf{
+    font: var(--font-formBold);
+    color: var(--color-gray);
+}
+
+
+
+.bmi{
+   flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 131px;
+}
+
+.bmi__foto{
+    display: flex;
+    justify-content: center;
+    width: 564px;
+    height: 388px;
+    background: #E7F5FE;
+    border-radius: 32px;
+    position: relative;
+}
+.bmi__foto img{
+    position: absolute;
+    
+    max-width: 468px;
+    transform: translate(0px, -145px);
+}
+
+.bmi__info{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.titleMini{
+    font: var(--font-titleMini);
+    color: var(--color-dark);
+}
+
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 168px 0 216px 0;
+   flex-wrap: wrap;
+}
+.info__card{
+    width: 365px;
+}
+.info__svg{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgb(242, 30, 132, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+.info__title{
+    font: var(--font-formlight);
+    color: var(--color-dark);
+    margin-bottom: 24px;
+    display: block;
+}
+.info__paragraf{ 
+    font: var(--font-formBold);
+    color: var(--color-gray);
+}
+
+
+
+.mails{
+    display: flex;
+    width: 1159px;
+    height: 704px;
+    position: relative;
+}
+.mails__message{  
+    padding: 32px;
+    width: 365px;
+    background-color: var(--color-white);
+    box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+    border-radius: 16px;
+}
+.mails__text{
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+.mails__info{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    font: var(--font-last);
+    letter-spacing: -0.05em;
+    color: var(--color-dark);
+}
+
+.mails__paragraf{
+    width: 564px;
+}
+.one{position: absolute;
+    right: 99px;
+}
+.two{position: absolute;
+    top: 260px;
+    right: 400px;
+}
+.tree{position: absolute;
+top: 260px;
+right: 0;
+}
+.four{position: absolute;
+    bottom: 0;
+    right: 600px;
+}
+.five{position: absolute;
+    bottom: 0;
+    right: 199px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    margin-bottom: 296px;
+    position: relative;
+}
+.bg{
+    position: absolute;
+    width: 978px;
+    height: 737px;
+    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+    border-radius: 0px 0px 35px 35px;
+    z-index: -1;
+    left: 24px;
+}
+.logo{
+    position: absolute;
+    top: -200px;
+    left: 0;
+}
+
+
+.blockOne__span{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: -0.05em;
+color: #FFFFFF;
+display: block;
+margin-bottom: 16px;
+}
+.blockOne__p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.blockTwo{
+    display: none;
+    gap: 25px;
+    align-items: center;
+}
